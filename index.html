@@ -167,7 +167,12 @@ p a:hover{
 
         </div>
     </div>
-    <script src="script.js"></script>
+    <script>
+        function showform(formId) {
+    document.querySelectorAll(".form-box").forEach(form => form.classList.remove("active"));
+    document.getElementById(formId).classList.add("active");
+}
+    </script>
 
 <div class="navbar">
   <a href="home.html">HOME</a>
